@@ -1,0 +1,173 @@
+.facet-details {
+    color: #ffffff;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .ability-card {
+    background-color: #2d2d2d;
+    border: none;
+    color: #ffffff;
+    height: 620px;
+    
+  }
+  
+  .ability-card .card-header {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: none;
+  }
+  
+  .ability-title {
+    font-weight: bold;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+   
+  }
+
+  .ability-title2 {
+    font-weight: bold;
+    margin-left: 65px;
+    text-transform: uppercase;
+    font-size: 38px;
+    
+   
+  }
+  
+  .ability-detail {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .ability-image {
+    
+    
+   
+    margin-bottom: 20px;
+  }
+  
+  .ability-info h5 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .ability-info p {
+    margin-bottom: 5px;
+  }
+  
+  .arterial-spray .card-header {
+    background-color: #eb942a;
+  }
+  
+  .bloodrush .card-header {
+    background-color: #2e2f30;
+  }
+  
+  p {
+    color: black;
+  }
+
+  .bab1{
+    font-size: 20px;
+  }
+
+  .bab2{
+    font-size: 20px;
+  }
+
+  .babbaru{
+    font-weight: bold;
+   
+  }
+
+  .babbaru1{
+    font-weight: bold;
+    margin-top: -50px;
+  }
+
+
+  .facet-details .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items in the center */
+    gap: 20px; /* Add some spacing between cards */
+  }
+  
+  .facet-details .col-md-6 {
+     flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .facet-details .card {
+    height: 100%; /* Ensure cards are of equal height if content varies */
+  }
+  
+/* General container styling */
+.container.facet-details {
+
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .facet-details .row {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .facet-details .col-md-6 {
+    flex: 1 1 calc(100% ); 
+   max-width: calc(100% );
+   box-sizing: border-box;
+ }
+
+  .facet-details .col-md-6 {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add spacing between sections */
+    padding: 0 10px; /* Add padding for inner content */
+  }
+
+  .ability-card {
+    margin: 0 auto; /* Center the card */
+    width: 100%; /* Ensure card fits the screen */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .ability-image {
+    width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .card-header {
+    text-align: center; /* Center-align headers */
+  }
+
+  .bab1,
+  .bab2 {
+    font-size: 14px; /* Smaller text size for mobile */
+  }
+
+  .babbaru,
+  .babbaru1 {
+    font-size: 16px; /* Adjust heading size */
+    text-align: center; /* Center-align headings */
+  }
+
+  .ability-title{
+    margin-left: 21px;
+    font-size: 21px;
+  }
+
+  
+  .ability-title2{
+   margin-left: 42px;
+    font-size: 21px;
+  }
+}

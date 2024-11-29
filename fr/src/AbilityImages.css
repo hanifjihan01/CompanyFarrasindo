@@ -1,0 +1,104 @@
+.image-box {
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+  transform: translateY(-5px);
+}
+
+.ability-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  overflow-x: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.row::-webkit-scrollbar {
+  display: none; 
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: rgba(0, 0, 0, 0.8); 
+  
+}
+
+.arrow-icon:hover {
+  color: #f5a209; 
+  transform: scale(1.2) rotate(5deg); 
+ font-weight: bold;
+ font-style: oblique;
+ 
+
+}
+
+.images{
+  width: 600px;
+}
+
+/* AbilityImages.css */
+.custom-card-width {
+  width: 400px !important;
+  height: 350px;
+}
+
+.custom-card-image {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar {
+  overflow-x: hidden; /* Ensures no horizontal scrollbar is shown */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.newportfolios{
+  margin-top: 15px;
+  font-size: 45px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+

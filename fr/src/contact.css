@@ -1,0 +1,387 @@
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-us-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+
+  
+  .contact-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  .contact-info h2,
+
+.contact-info strong {
+  font-size: 16px; 
+}
+
+.contact-info a {
+  font-size: 16px; 
+}
+
+.social-icons i {
+  font-size: 1.5em; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .social-icon {
+    width: 38px;
+    height: 38px;
+  }
+  
+  
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info h3 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding-left: 20px;
+    width: 900px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0; 
+  }
+  
+  
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 500px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group input {
+    width: 48%;
+  }
+
+  
+  .checkbox-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+    border-color: #555;
+  }
+
+  .contact-us-container {
+    background-color: white;
+  }
+
+  
+  
+  .contact-us-header {
+    background-image: url('./assets/bapack.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ 
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent; /* Make the background transparent */
+    border: none;
+    border-bottom: 1px solid #ccc; /* Only show the bottom border */
+    border-radius: 0; 
+    font-size: 14px;
+    outline: none; 
+  }
+  
+  .input-group input {
+    width: 48%;
+    padding: 10px;
+    background-color: transparent; 
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    border-radius: 0;
+    font-size: 16px;
+    outline: none; 
+  }
+  
+  .input-group input:focus,
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-bottom: 1px solid #333; /* Change the bottom border color on focus */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-us-header h1,
+  .contact-info h2,
+  .contact-info p,
+  .contact-info a,
+  .contact-info h3,
+  .contact-form h2,
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    animation: fadeIn 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  .contact-us-header h1 {
+    animation-delay: 0s;
+  }
+  
+  .contact-info h2 {
+    animation-delay: 0.5s;
+  }
+  
+  .contact-info p,
+  .contact-info a {
+    animation-delay: 0.1s;
+  }
+  
+  .contact-info h3 {
+    animation-delay: 0.5s;
+  }
+  
+  .social-icons {
+    animation-delay: 2s;
+  }
+  
+  .contact-form h2 {
+    animation-delay: 2.5s;
+  }
+  
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    animation-delay: 3s;
+  }
+  
+  .contact-form button {
+    animation-delay: 3.5s;
+  }
+  
+
+  .contact-us-header h1 {
+    color: rgb(21, 19, 19); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+  }
+
+  .contact-us-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us-content {
+    margin-top: 20px;
+  }
+  
+  .contact-info h2,
+  .contact-info p,
+  .contact-info h3 {
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+  }
+  
+  .social-icon {
+    width: 40px;
+    margin: 0 10px;
+    
+  }
+  
+  .contact-info p {
+    font-size: 24px; 
+  }
+
+  .contact-info .address{
+    font-size: 30px;
+    margin-left: -60px;
+    margin-top: 60px;
+  
+  }
+
+  .contact-info .email1{
+    font-size: 30px;
+    margin-left: -60px;
+    margin-top: 60px;
+  
+  }
+  
+  .contact-info h2,
+  .contact-info h3 {
+    font-size: 30px; 
+  }
+  
+  .contact-info strong {
+    font-size: 30px; 
+  }
+  
+  .contact-info h3 {
+    font-size: 30px; 
+  }
+
+  .situs{
+    font-size: 300px;
+  }
+
+  .inline-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+    
+  }
+  
+ 
+  
+
+  .contact-us-container {
+    position: relative;
+  }
+  
+  .full-width-separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: silver;  
+    top: 37%;  
+    margin-top: 20px;
+  }
+  
+  h1{
+
+      font-size: 36px;
+      margin: 0;
+      margin-left: -60px;
+      margin-top: 60px;
+      box-shadow: black;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      
+     
+    }
+  
+    .contact-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    
+    .contact-detail-item {
+      flex: 1;
+      margin-right: 20px;
+      font-size: 30px;
+    }
+    
+    .contact-detail-item:last-child {
+      margin-right: 0;
+    }
+
+    .website-link  {
+      font-size: 40px; 
+      font-weight: bold; 
+      display: inline-block;
+      color: rgb(65, 114, 222);
+    }
+    
+    .contact-us-title{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: -44px;
+      font-weight: bold;
+    }
+
+    .follow{
+      margin-right: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      
+    }

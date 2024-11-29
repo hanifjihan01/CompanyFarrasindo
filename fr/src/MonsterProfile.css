@@ -1,0 +1,587 @@
+.profile-container {
+   
+    /* background-image: url("assets/background_fp.jpg"); */
+    padding: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 10px; */
+}
+
+.left-section {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #e1a01f;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.content-section {
+    max-width: 50%;
+    margin-right: 30px;
+}
+
+.badge-agility {
+    background-color: orange;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 580px;
+    height: 80px;
+    color: black;
+    margin-left: -30px;
+
+} 
+
+.badge-agility {
+    font-size: 60px !important; /* Adjust this value as needed */
+    font-weight: bold;
+   
+}
+
+.badge-agility1 {
+    background-color: orange;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 610px;
+    height: 80px;
+    color: black;
+    margin-left: -30px;
+
+    
+   
+
+} 
+
+.badge-agility1 {
+    font-size: 60px !important; /* Adjust this value as needed */
+    font-weight: bold;
+   
+}
+
+
+
+
+.badge .badge-agility{
+    font-size: 38px;
+    
+}
+
+.monster-name {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    color: black;
+}
+
+.monster-tagline {
+    font-size: 26px;
+    color: orange;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.monster-description {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: black;
+    text-align: left;
+}
+
+.read-history {
+    display: inline-block;
+    color: rgb(245, 163, 11);
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.details {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.attribute {
+    font-weight: bold;
+    margin-left: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+.complexity {
+    margin-left: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.abilities h4 {
+    margin-bottom: 10px;
+}
+
+.ability-icons .icon {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.image-section {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.monster-image {
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ability-icon {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ability-icon:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.monsterport{
+
+    color: black;
+    font-weight: bold;
+    text-shadow: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.portfolio-background {
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.monster-image {
+    animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ability-icons img {
+    animation: fadeInIcons 0.8s ease-in-out forwards;
+    opacity: 0;
+}
+
+.ability-icons img:nth-child(1) { animation-delay: 0.2s; }
+.ability-icons img:nth-child(2) { animation-delay: 0.4s; }
+.ability-icons img:nth-child(3) { animation-delay: 0.6s; }
+.ability-icons img:nth-child(4) { animation-delay: 0.8s; }
+.ability-icons img:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeInIcons {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+}
+
+/* Initial hidden state for animations */
+.image-section,
+.content-section {
+    opacity: 0;
+    transform: translateY(20px); /* Slight move down */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the elements become visible */
+.animate-visible {
+    opacity: 1;
+    transform: translateY(0); /* Back to original position */
+}
+
+/* Optional: For the concrete pump image */
+.monster-image {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* For responsive layout */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    margin-top: 20px; /* Optional: Adds space above the video */
+    margin-bottom: 20px; /* Optional: Adds space below the video */
+    width: 100%;
+}
+.youtube-video {
+    max-width: 800px; /* Limits the video width */
+    width: 100%; /* Makes the video responsive */
+}
+
+.newportfolio{
+
+    font-size: 38px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tipeajasih{
+
+    font-size: 20px;
+}
+
+.bgrigi-background {
+    background-repeat: repeat;
+    /* background-attachment: fixed; */
+    padding-bottom: 50px; /* Adjust padding as needed */
+}
+
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .mains-image {
+    width: 530px; 
+    height: 323px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+} 
+
+.thumbnails-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgba(231, 156, 19, 0.8);
+    border-radius: 12px;
+}
+
+.thumbnails-image {
+    width: 146px; /* Set the same width */
+    height: 90px; /* Set the same height */
+    object-fit: cover; /* Ensures uniform sizing */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    
+}
+
+.thumbnails-image.active {
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 26px;
+    box-shadow: 1px 3px rgba(25, 22, 17, 0.8);
+    background-color: rgb(244, 177, 55, 0.8);
+    
+}
+
+/* Thumbnail image animation */
+.thumbnails-image {
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.thumbnails-image.active {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.thumbnails-image:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.minisketch-image {
+
+    width: 1500px;
+    height: auto;
+    margin-left: 170px;
+}
+
+.minisketchslcm-image{
+    width: 800px;
+    height: auto;
+    margin-left: 470px;
+}
+
+.minisketchmone-image {
+
+    width: 1100px;
+    height: 600px;
+    margin-left: 280px;
+}
+
+.minisketchmtwo-image {
+
+    width: 1100px;
+    height: 600px;
+    margin-left: 280px;
+}
+
+.minisketchmixertiga-image {
+
+    width: 1100px;
+    height: 600px;
+    margin-left: 280px;
+}
+
+.minisketchbp-image {
+
+    width: 1100px;
+    height: 650px;
+    margin-left: 280px;
+}
+
+.minisketchbpdua-image {
+
+    width: 1100px;
+    height: 550px;
+    margin-left: 280px;
+}
+
+.minisketch5-image {
+
+    width: 1050px;
+    height: auto;
+    margin-left: 370px;
+}
+
+.minisketch4-image{
+
+    width: 700px;
+    height: auto;
+    margin-left: 520px;
+}
+
+.minisketch2-image {
+
+    width: 1050px;
+    height: auto;
+    margin-left: 400px;
+}
+
+.minisketch3-image {
+
+    width: 1050px;
+    height: auto;
+    margin-left: 400px;
+}
+
+/* General mobile styles */
+@media (max-width: 768px) {
+
+.badge-agility{
+    font-size: 30px !important;
+    margin-left: -160px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+
+
+    .profile-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+        padding: 16px;
+    }
+
+    .left-section {
+        display: none; /* Hide left section on mobile for better use of space */
+    }
+
+    .content-section {
+        text-align: left; /* Center-align content */
+        padding: 16px;
+    }
+
+    .images-section {
+        width: 100%;
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    .mains-image {
+        width: 90%; /* Shrink main image */
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .thumbnails-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Ensure thumbnails wrap if too many */
+        gap: 8px;
+    }
+
+    .thumbnails-image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 2px solid transparent;
+    }
+
+    .thumbnails-image.active {
+        border-color: #007bff; /* Highlight active thumbnail */
+    }
+
+    .minisketch-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .minisketch-image {
+        width: 90%; /* Adjust sketch image size */
+        height: auto;
+    }
+
+    .video-container {
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    .youtube-video {
+        width: 100% !important; /* Ensure video scales to container */
+        height: auto !important;
+    }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+    .monster-name {
+        font-size: 1.5rem; /* Smaller font for smaller screens */
+    }
+
+    .monster-tagline {
+        font-size: 1.2rem;
+    }
+
+    .monster-description {
+        font-size: 1rem;
+    }
+}
+
+/* General styling for mobile responsiveness */
+@media (max-width: 768px) {
+    .minisketch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .minisketch-image {
+        width: 100%; /* Make the sketch scale appropriately */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 150px;
+    }
+
+    .newportfolio {
+        font-size: 1.5rem; /* Adjust the heading size */
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .monster-description, .monster-tagline {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .content-section {
+        max-width: 100%;
+        margin-right: 20px;
+    }
+    .badge-agility {
+        background-color: orange;
+        padding: 10px 25px;
+        border-radius: 5px;
+        font-size: 25px !important;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 250px;
+        height: 44px;
+        color: black;
+        margin-left: 1px;
+    
+    } 
+
+    .monster-name {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 1px;
+        color: black;
+    }
+
+    .monster-tagline {
+        font-size: 25px;
+        color: orange;
+        margin-bottom: 20px;
+       
+        font-weight: bold;
+       margin-left: -11px;
+       line-height: 32px;
+    }
+
+
+    .read-history {
+        display: inline-block;
+        color: rgb(245, 163, 11);
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-size: 21px;
+        margin-left: 9px;
+    }
+}
+
+

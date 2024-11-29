@@ -1,0 +1,137 @@
+/* General container styles */
+.monster-status-container {
+  padding: 20px;
+  background-color: #4b4949; /* Light gray background */
+  border-radius: 8px; /* Optional: rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.monster-status-container.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.attributebaru {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Flexbox layout for desktop */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Spacing between columns */
+  flex-wrap: wrap; /* Ensure it wraps for smaller screens */
+}
+
+.col-md-3,
+.col-md-6 {
+  flex: 1;
+  max-width: 400px;
+}
+
+.attributes {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.cpp {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between each row */
+}
+
+
+
+
+
+
+/* Roles section styles */
+.roles-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.roles div {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.roles strong {
+  font-size: 1.1rem;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .monster-status-container {
+    padding: 15px;
+  }
+
+  .attributebaru {
+    font-size: 1.4rem;
+  }
+
+  .roles-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  .roles div {
+    font-size: 0.9rem;
+  }
+
+  .cpp {
+    font-size: 1.2rem;
+  }
+
+  .col-md-3,
+  .col-md-6 {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between rows */
+}
+
+.role-item {
+  display: flex;
+  justify-content: space-between; /* Space between label and value */
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff; /* White text color */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.role-item strong {
+  flex-basis: 50%; /* Ensure consistent space for labels */
+  text-align: left;
+}
+
+.role-item span {
+  flex-basis: 50%; /* Ensure consistent space for values */
+  text-align: right;
+}
+
+
+.memet{
+  margin-left: 13px;
+}
